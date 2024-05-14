@@ -1,1 +1,1 @@
-# Cognifiz
+# Cognifyz
