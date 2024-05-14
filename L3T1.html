@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="L3T1.css">
+<title>Level 3 Task 1</title>
+</head>
+<body>
+<div style="text-align:center">
+  <h2>Level 3 Task 1</h2>
+  <p>
+    Image Manipulation:
+
+    Use CSS to create a basic image gallery
+    with thumbnail images that enlarge
+    when clicked.
+    
+    Implement a simple image slideshow
+    that automatically transitions between
+    images using HTML and CSS.</p>
+  <p>Click on the images below:</p>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="image1.jpg" alt="image1" onclick="openModal();currentSlide(1)">
+  </div>
+  <div class="column">
+    <img src="image2.png" alt="image2" onclick="openModal();currentSlide(2)">
+  </div>
+  <div class="column">
+    <img src="image3.jpg" alt="image3" onclick="openModal();currentSlide(3)">
+  </div>
+  <div class="column">
+    <img src="image4.jpg" alt="image4" onclick="openModal();currentSlide(4)">
+  </div>
+  <div class="column">
+    <img src="image5.jpg" alt="image5" onclick="openModal();currentSlide(5)">
+  </div>
+</div>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="image1.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="image2.png" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="image3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="image4.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="image5.jpg" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+  </div>
+</div>
+<script src="L3T1.js"></script>
+</body>
+</html>
